@@ -27,5 +27,6 @@ RUN apt-get install -y curl grep sed dpkg && \
     apt-get clean
 RUN pip install boto3
 
+
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
